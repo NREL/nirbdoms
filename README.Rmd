@@ -1,0 +1,68 @@
+---
+title: "nirbdoms"
+author: "Zofia Tillman"
+date: "`r Sys.Date()`"
+output:
+  github_document:
+    html_preview: false
+---
+
+Data and code used to run analysis and create visualizations/tables for 'Rapid monitoring of fermentations – a feasibility study on biological 2,3-butanediol production' (Biotechnology for Biofuels and Bioproducts 2025)
+
+## How to Reproduce Analysis
+
+1. Clone Repository
+
+2. Download the research data used to perform this analysis from data.nrel.gov - Data for "Rapid monitoring of fermentations- a feasibility study of biological 2,3-butanediol production" and save data to data/raw folder within repository
+
+3. Produce Models by working through the following scripts: 
+
+  * laboratoryatline_full_modelbuild.R (lab grade full models)
+  * laboratoryatline_lowcostfeasibility_modelbuild.R (lab grade low cost feasibility models)
+  * laboratoryatline_onlinefeasibility_modelbuild.R (lab grade on line feasibility models)
+  * lowcostatline_modelbuild.R (low cost at line models)
+  * laboratoryonline_modelbuild.R (laboratory grade on line models)
+  
+4. Produce Figures and Tables describing the models by working through the following scripts: 
+
+  * figure_(1-S11).R  code used to generate each figure in the manuscript
+  * table_(S1-5).R code used to generate each table in the manuscript
+
+```{r library_calls, message=FALSE, echo=FALSE, warning = FALSE}
+library(tidyverse)
+library(pls)
+library(prospectr)
+library(ggpmisc)
+library(openxlsx)
+library(egg)
+library(ggsci)
+library(caret)
+library(ggtext)
+library(GGally)
+library(patchwork)
+library(Hmisc)
+```
+
+## Dependencies
+
+* `r R.version.string`
+  * `tidyverse` (v. `r packageVersion("tidyverse")`)
+  * `pls` (v. `r packageVersion("pls")`)
+  * `prospectr` (v. `r packageVersion("prospectr")`)
+  * `ggpmisc` (v. `r packageVersion("ggpmisc")`)
+  * `openxlsx` (v. `r packageVersion("openxlsx")`)
+  * `egg` (v. `r packageVersion("egg")`)
+  * `ggsci` (v. `r packageVersion("ggsci")`)
+  * `caret` (v. `r packageVersion("caret")`)
+  * `ggtext` (v. `r packageVersion("ggtext")`)
+  * `GGally` (v. `r packageVersion("GGally")`)
+  * `patchwork` (v. `r packageVersion("patchwork")`)
+  * `Hmisc` (v. `r packageVersion("Hmisc")`)
+  * `rmarkdown` (v. `r packageVersion("rmarkdown")`)
+  
+
+## My Computer
+
+```{r sessioninfo, echo=FALSE}
+sessionInfo()
+```
