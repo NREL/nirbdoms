@@ -5,8 +5,9 @@ Zofia Tillman
 
 Code used to run analysis and create visualizations/tables for
 ‘Rapid monitoring of fermentations – a feasibility study on biological
-2,3-butanediol production’ (Biotechnology for Biofuels and Bioproducts
-2025)
+2,3-butanediol production’ 
+
+Tillman, Z., Peterson, D.J., Dowe, N. et al. Rapid monitoring of fermentations: a feasibility study on biological 2,3-butanediol production. Biotechnol. Biofuels Bioprod. 18, 60 (2025).
 
 ## How to Reproduce Analysis
 
